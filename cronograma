@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Cronograma II Trimestre 2025</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f4f8;
+            margin: 30px;
+            color: #333;
+        }
+        .voltar-btn {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            background: #0a4a82;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            font-weight: 540;
+            box-shadow: 0 2px 8px rgb(10 74 130 / 0.10);
+            transition: background 0.2s;
+        }
+        .voltar-btn:hover {
+            background: #06406b;
+        }
+        h1 {
+            text-align: center;
+            color: #0a4a82;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+        table {
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto 30px auto;
+            border-collapse: separate;
+            border-spacing: 0 12px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgb(10 74 130 / 0.15);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        thead tr {
+            background: #0a4a82;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        thead th {
+            padding: 15px 10px;
+        }
+        tbody tr {
+            background: #e9f0f8;
+            transition: background-color 0.3s ease;
+            cursor: default;
+        }
+        tbody tr:hover {
+            background-color: #d2e4f8;
+        }
+        tbody td {
+            padding: 12px 15px;
+            vertical-align: middle;
+            border-left: 4px solid transparent;
+            font-size: 0.95em;
+        }
+        tbody tr:nth-child(even) td {
+            background: #f7fbff;
+        }
+        tbody tr:hover td {
+            border-left-color: #0a4a82;
+            background: #d2e4f8;
+        }
+        /* Meses destacados */
+        tbody tr.month-row td {
+            background: #0a4a82;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.05em;
+            text-align: center;
+            border-left: none !important;
+            cursor: default;
+            padding: 14px 0;
+        }
+        td.date {
+            white-space: nowrap;
+            width: 180px;
+            color: #0a4a82;
+            font-weight: 600;
+        }
+        td.event b {
+            color: #c0392b;
+        }
+        td.event u {
+            color: #2980b9;
+        }
+        .obs {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            background: #e1f0ff;
+            border-left: 5px solid #0a4a82;
+            color: #0a4a82;
+            font-weight: 700;
+            font-size: 1.1em;
+            border-radius: 6px;
+        }
+        .check-data {
+            width: 18px;
+            height: 18px;
+            accent-color: #0a4a82;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+        td.data-check {
+            width: 36px;
+            text-align: center;
+        }
+        /* Fundo verde claro para datas expiradas, texto riscado em vermelho */
+        tr.expirada td {
+            background: #c4fdd6 !important; /* Verde claro */
+            color: #e74c3c !important;      /* Vermelho */
+            text-decoration: line-through;  /* Texto riscado */
+        }
+        @media (max-width:600px) {
+            .voltar-btn { left: 10px; top: 10px; padding: 7px 14px; font-size: 0.95em;}
+            table { width: 100%; font-size: 0.95em;}
+            .obs { font-size: 1em; }
+        }
+    </style>
+</head>
+<body>
+    <button class="voltar-btn" onclick="window.history.back();">&#8592; Voltar</button>
+    <h1>Cronograma II Trimestre 2025</h1>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Data</th>
+                <th>Evento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="month-row"><td colspan="3">MAIO</td></tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d1" /></td>
+                <td class="date">26/05</td>
+                <td class="event">Início do Trimestre</td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d2" /></td>
+                <td class="date">27/05</td>
+                <td class="event">Reunião de pais: entrega de boletins, ficha de autoavaliação e informações importantes</td>
+            </tr>
+            <tr class="month-row"><td colspan="3">JUNHO</td></tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d3" /></td>
+                <td class="date">02 a 06/06</td>
+                <td class="event">Semana do Meio Ambiente</td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d4" /></td>
+                <td class="date">03/06</td>
+                <td class="event">Provas da 1ª Fase da OBMEP</td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d5" /></td>
+                <td class="date">07/06</td>
+                <td class="event">Sábado Letivo – Arraiá da Cardoso; apresentação de quadrilhas, desfile dos casais caipiras, danças, correio elegante e comidas típicas</td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d6" /></td>
+                <td class="date">18/06</td>
+                <td class="event">Interclasse de voleibol, queimada e tênis de mesa</td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d7" /></td>
+                <td class="date" style="color:#c0392b;">19/06</td>
+                <td class="event"><b>Feriado de Corpus Christi</b></td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d8" /></td>
+                <td class="date" style="color:#c0392b;">24/06</td>
+                <td class="event"><b>Feriado de São João</b></td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d9" /></td>
+                <td class="date">20/06 a 04/07</td>
+                <td class="event">Recesso junino</td>
+            </tr>
+            <tr class="month-row"><td colspan="3">JULHO</td></tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d10" /></td>
+                <td class="date" style="color:#c0392b;">02/07</td>
+                <td class="event"><b>Independência da Bahia</b></td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d11" /></td>
+                <td class="date">08/07</td>
+                <td class="event">Planejamento</td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d12" /></td>
+                <td class="date">09/07</td>
+                <td class="event">Retorno com os alunos</td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d13" /></td>
+                <td class="date">16/07</td>
+                <td class="event">Data limite para envio das questões da Atividade Interdisciplinar</td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d14" /></td>
+                <td class="date">23/07</td>
+                <td class="event">Data limite para envio das questões do Simulado do II trimestre</td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d15" /></td>
+                <td class="date">30/07</td>
+                <td class="event">Simulado da Rede municipal</td>
+            </tr>
+            <tr class="month-row"><td colspan="3">AGOSTO</td></tr>
+            
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d17" /></td>
+                <td class="date" style="color:#c0392b;">02/08</td>
+                <td class="event"><b>Dia do Evangélico</b></td>
+            </tr>
+
+            
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d16" /></td>
+                <td class="date">08/08</td>
+                <td class="event">Gincana Folclórica - Abertura: 1º e 2º confeccionar os cartazes e o grito de garra. 3º e 4º apresentação na quadra.</td>
+            </tr>
+           
+            
+                        <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d18" /></td>
+                <td class="date">08/08</td>
+                <td class="event">Atividade Interdisciplinar – via link</td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d19" /></td>
+                <td class="date">09/08</td>
+                <td class="event">Sábado Letivo – Dia dos Pais</td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d20" /></td>
+                <td class="date">11/08</td>
+                <td class="event">Dia do Estudante</td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d21" /></td>
+                <td class="date">11 a 15/08</td>
+                <td class="event">Semana de avaliações</td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d22" /></td>
+                <td class="date">15/08</td>
+                <td class="event">Abertura da OILEM</td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d23" /></td>
+                <td class="date">25 a 29/08</td>
+                <td class="event">Revisões e recuperações</td>
+            </tr>
+            <tr class="month-row"><td colspan="3">SETEMBRO</td></tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d24" /></td>
+                <td class="date">01 a 05/09</td>
+                <td class="event">Semana da Pátria</td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d25" /></td>
+                <td class="date">07/09</td>
+                <td class="event">Independência do Brasil (dia letivo)</td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d26" /></td>
+                <td class="date">09 a 10/09</td>
+                <td class="event">Conselhos de classe</td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d27" /></td>
+                <td class="date">12/09</td>
+                <td class="event">Final do 2º Trimestre</td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d28" /></td>
+                <td class="date">13/09</td>
+                <td class="event">Festa do Folclore – Sábado Letivo</td>
+            </tr>
+            <tr>
+                <td class="data-check"><input type="checkbox" class="check-data" data-id="d29" /></td>
+                <td class="date">15/09</td>
+                <td class="event">Folga referente à Festa do Folclore</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="obs">
+        XXVII FESTA DO FOLCLORE – TRADIÇÕES QUE ACOLHEM, CULTURAS QUE ENCANTAM.
+    </div>
+    <script>
+      // Salvar e restaurar status das caixas de seleção
+      document.querySelectorAll('.check-data').forEach((box) => {
+        const checked = localStorage.getItem(box.dataset.id);
+        if (checked === 'true') box.checked = true;
+        box.addEventListener('change', function() {
+          localStorage.setItem(box.dataset.id, box.checked);
+        });
+      });
+
+      // --------- DIA DA SEMANA ---------
+      function getWeekdayName(dateStr) {
+        const dias = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
+        // Para faixas, pega o 1º dia
+        let target = dateStr.split('a')[0].trim();
+        let [day, month] = target.split('/');
+        // Ano padrão (altere se usar para outro ano):
+        let year = 2025;
+        if (parseInt(month,10) < 5) year++;
+        const d = new Date(year, parseInt(month,10)-1, parseInt(day,10));
+        return dias[d.getDay()];
+      }
+
+      // Acrescenta dia da semana em todas as datas
+      document.querySelectorAll('td.date').forEach(function(cell) {
+        const original = cell.textContent.trim();
+        if (!original.match(/\(\w+\)$/)) {  // Evita duplicar dia da semana
+          let dataParaCalculo = original.replace(/ \(.*$/, '');
+          if (!dataParaCalculo) return;
+          if (!dataParaCalculo.includes('a'))
+            cell.textContent = `${original} (${getWeekdayName(dataParaCalculo)})`;
+          else {
+            const ini = dataParaCalculo.split('a')[0].trim();
+            cell.textContent = `${original} (${getWeekdayName(ini)})`;
+          }
+        }
+      });
+
+      // -------- FIM DO DIA DA SEMANA --------------
+
+      // --------- FUNDO VERDE CLARO PARA DATAS EXPIRADAS E TEXTO RISCADO ----------
+      function parseDatePtBR(dateStr) {
+        // Função para datas simples e faixas "20/06 a 04/07"
+        let target = dateStr;
+        if (dateStr.includes('a'))
+          target = dateStr.split('a')[1].trim(); // usa o término
+        let [day, month] = target.split('/');
+        let year = 2025;
+        if (parseInt(month,10) < 5) year++;
+        return new Date(year, parseInt(month,10)-1, parseInt(day,10));
+      }
+      const today = new Date();
+      document.querySelectorAll('tbody tr').forEach((row) => {
+        const dateCell = row.querySelector('.date');
+        if (!dateCell) return;
+        let text = dateCell.textContent.trim().replace(/\s?\(.*\)$/,''); // Remove o dia da semana
+        let dataRef = text;
+        if (text.includes('a')) {
+          const end = text.split('a')[1].trim();
+          dataRef = end;
+        }
+        if (parseDatePtBR(dataRef).setHours(23,59,59,999) < today.getTime()) {
+          row.classList.add('expirada');
+        }
+      });
+      // --------- FIM FUNDO VERDE DATAS EXPIRADAS ----------
+    </script>
+</body>
+</html>
